@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h> 
+
+
+int main()
+{
+    
+    const size_t sizeArray = 1000;
+
+    int * array = malloc(sizeof(int) * sizeArray);
+
+    free(array);
+
+    int * new = realloc(array, sizeArray);
+
+    free(new);
+
+    return 0;
+}
